@@ -23,7 +23,7 @@ cd face-mask-detection
 * Download [Face-Mask](https://www.kaggle.com/andrewmvd/face-mask-detection) dataset from Kaggle and copy it into `datasets` folder. 
 * Execute the following command to automatically unzip and convert the data into the YOLO format and split it into train and valid sets. The split ratio was set to 80/20%.
 
-* You can downloaded our model [Trained model](https://drive.google.com/file/d/13mlEQbABDnl6ZQinzPEGnj88bGJ69QB3/view?usp=sharing) trained on [Face-Mask](https://www.kaggle.com/andrewmvd/face-mask-detection)
+* You can download our model [Trained model](https://drive.google.com/file/d/13mlEQbABDnl6ZQinzPEGnj88bGJ69QB3/view?usp=sharing) trained on [Face-Mask](https://www.kaggle.com/andrewmvd/face-mask-detection) dataset and place it in a new created folder named models at the root of the project.
 ```
 
 
@@ -44,6 +44,7 @@ python train.py --img 640 --batch 16 --epochs 100 --data ../mask_config.yaml --w
 ```
 - python detect.py --source ../datasets/input.jpeg --weights runs/train/exp/weights/best.pt --conf 0.2
 
+                            or
 
 - python detect.py --source ../datasets/input.mp4 --weights runs/train/exp/weights/best.pt --conf 0.2
 ```
