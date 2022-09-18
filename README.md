@@ -17,9 +17,16 @@ cd face-mask-detection
 ```
 
 #### Training
+* Create a virtualenv: python -m venv env
+* Activate it: source env/bin activate
+
 * Download [Face-Mask](https://www.kaggle.com/andrewmvd/face-mask-detection) dataset from Kaggle and copy it into `datasets` folder. 
 * Execute the following command to automatically unzip and convert the data into the YOLO format and split it into train and valid sets. The split ratio was set to 80/20%.
+
+* You can downloaded our model [Trained model](https://drive.google.com/file/d/13mlEQbABDnl6ZQinzPEGnj88bGJ69QB3/view?usp=sharing) trained on [Face-Mask](https://www.kaggle.com/andrewmvd/face-mask-detection)
 ```
+
+
 cd ..
 python prepare.py
 ```
